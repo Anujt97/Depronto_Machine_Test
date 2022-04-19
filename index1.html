@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       Feedback Form
+    </title>
+    <style>
+
+    h3{
+        text-align: center;
+    }
+    body{
+        background-color: rgb(214, 149, 70);
+        text-align: center;
+        line-height: 50px;
+        color: darkslategrey;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <label>First Name : </label>
+        <input type='text' id='f_name' /><br>
+        <label>Last Name : </label>
+        <input type='text' id='l_name' /><br>
+        <label>Email : </label>
+        <input type='text' id='email' pattern='.+@.+\..+' title="enter valid email format" required /><br>
+        <label>Date</label>
+        <input type='date'required /><br>
+        <label>Enter Title Of Feedback</label>
+        <input type='text' id='l_name' /><br>
+        <h4>Please Enter the Message of Feedback</h4>
+        <textarea placeholder="Enter your Feedback in this Box"></textarea><br>
+        <label>Category : </label>
+        <input type="checkbox" id="technical isuue" name="technical isuue" value="technical isuue">
+        <label for="technical isuue"> Technical issue </label><br>
+        <input type="checkbox" id="2" name="2" value="2">
+        <label for="2"> Internet Speed</label><br>
+        <input type="checkbox" id="3" name="3" value="3">
+        <label for="3"> Design Issues</label><br>
+        <label>Gender : </label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female  <br>
+
+
+        <button type='submit' onclick="">Register</button>
+
+
+    </form>
+    <script src="index1.js" onclick="primary();"></script>
+</body>
+
+</html>
